@@ -1,0 +1,689 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>試合日程</title>
+    <link rel="stylesheet" href="static/styles/base.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@100..900&display=swap" rel="stylesheet">
+    <link rel="icon" href="static/icon/football.ico">
+    <link rel="stylesheet" href="static/styles/textfields.css">
+</head>
+<body>
+    
+
+    
+<style>
+    .navbarItem.nonlogo.yotei{
+        border-bottom: 2px solid black;
+    }
+</style>
+<link rel="stylesheet" href="static/styles/game_schedule.css">
+
+<link rel="stylesheet" href="static/styles/main_image.css">
+<div class="mainImageContainer">
+    <img class="mainImage" src="banner/schedule_page_banner" >
+    <div class="mainImageLabel">
+        <h2>
+            <p class="skewedText">
+                試合日程
+            </p>
+        </h2>
+    </div>
+</div>
+
+
+<div class="matchBoxContainer">
+    
+        <div class="matchBox">
+            <div class="matchBoxColumn first">
+                <div class="matchBoxCell label">
+                    <div> <b>A</b><br> <div style="font-size: 1.9vw;">ブロック</div> </div>
+                </div>
+                <div class="matchBoxCell"></div>
+                <div class="matchBoxCell"></div>
+                <div class="matchBoxCell"></div>
+            </div>
+            
+            <div class="matchBoxColumn">
+                <div class="matchBoxCell image">
+                    
+                    <img src="fetch_box_image/1" alt="">
+                </div>
+                <!-- Use loop.index0 for 0-based index -->
+                
+                    <div class="matchBoxCell strikethrough"></div>
+                    <div class="matchBoxCell"></div>
+                    <div class="matchBoxCell"></div>
+                
+            </div>
+            
+            <div class="matchBoxColumn">
+                <div class="matchBoxCell image">
+                    
+                    <img src="fetch_box_image/2" alt="">
+                </div>
+                <!-- Use loop.index0 for 0-based index -->
+                
+                    <div class="matchBoxCell"></div>
+                    <div class="matchBoxCell strikethrough"></div>
+                    <div class="matchBoxCell"></div>
+                
+            </div>
+            
+            <div class="matchBoxColumn">
+                <div class="matchBoxCell image">
+                    
+                    <img src="fetch_box_image/3" alt="">
+                </div>
+                <!-- Use loop.index0 for 0-based index -->
+                
+                    <div class="matchBoxCell"></div>
+                    <div class="matchBoxCell"></div>
+                    <div class="matchBoxCell strikethrough"></div>
+                
+            </div>
+            
+        </div>
+    
+        <div class="matchBox">
+            <div class="matchBoxColumn first">
+                <div class="matchBoxCell label">
+                    <div> <b>B</b><br> <div style="font-size: 1.9vw;">ブロック</div> </div>
+                </div>
+                <div class="matchBoxCell"></div>
+                <div class="matchBoxCell"></div>
+                <div class="matchBoxCell"></div>
+            </div>
+            
+            <div class="matchBoxColumn">
+                <div class="matchBoxCell image">
+                    
+                    <img src="fetch_box_image/4" alt="">
+                </div>
+                <!-- Use loop.index0 for 0-based index -->
+                
+                    <div class="matchBoxCell strikethrough"></div>
+                    <div class="matchBoxCell"></div>
+                    <div class="matchBoxCell"></div>
+                
+            </div>
+            
+            <div class="matchBoxColumn">
+                <div class="matchBoxCell image">
+                    
+                    <img src="fetch_box_image/5" alt="">
+                </div>
+                <!-- Use loop.index0 for 0-based index -->
+                
+                    <div class="matchBoxCell"></div>
+                    <div class="matchBoxCell strikethrough"></div>
+                    <div class="matchBoxCell"></div>
+                
+            </div>
+            
+            <div class="matchBoxColumn">
+                <div class="matchBoxCell image">
+                    
+                    <img src="fetch_box_image/6" alt="">
+                </div>
+                <!-- Use loop.index0 for 0-based index -->
+                
+                    <div class="matchBoxCell"></div>
+                    <div class="matchBoxCell"></div>
+                    <div class="matchBoxCell strikethrough"></div>
+                
+            </div>
+            
+        </div>
+    
+</div>
+
+
+
+
+<div class="scheduleTableContainer">
+    <table class="scheduleTable">
+        <tr>
+            
+            <th style="width: 10px;" rowspan="2" class="scheduleTableHeader">
+                日付
+            </th>
+            <th style="width: 10px;" rowspan="2" class="scheduleTableHeader">
+                曜日
+            </th>
+            <th style="width: 10px;" rowspan="2" class="scheduleTableHeader">
+                会場
+            </th>
+            <th style="width: 5px;" rowspan="2" class="scheduleTableHeader">
+                開始
+            </th>
+            <th rowspan="2" class="scheduleTableHeader">
+                ブロック
+            </th>
+            <th colspan="3"  class="scheduleTableHeader">
+                大戦
+            </th>
+    
+        </tr>
+        <tr>
+            <th class="scheduleTableHeader">
+                左
+            </th>
+            <th class="scheduleTableHeader">
+            </th>
+            <th class="scheduleTableHeader">
+                右
+            </th>
+    
+        </tr>
+        
+    
+            <tr>
+                
+                <td class="scheduleTableData date">
+                    <div>
+                        2024-09-01
+                    </div>
+                </td>
+                <td class="scheduleTableData day">
+                    <div>
+                        日
+                    </div>
+                </td>
+                <td class="scheduleTableData venue">
+                    <div>長浜バイオ大学ドーム</div>
+                </td>
+                <td class="scheduleTableData time">
+                    <div>11:00</div>
+                </td>
+                <td class="scheduleTableData block">
+                    <div>B1</div>
+                </td>
+                <td class="scheduleTableData team">
+                    <div>アグレッサーズ</div>
+                </td>
+                <td class="scheduleTableData">
+                    <div>vs</div>
+                </td>
+                <td class="scheduleTableData team">
+                    <div>ザルトリウス</div>
+                </td>
+    
+            </tr>
+        
+    
+            <tr>
+                
+                <td class="scheduleTableData date">
+                    <div>
+                        2024-09-16
+                    </div>
+                </td>
+                <td class="scheduleTableData day">
+                    <div>
+                        月
+                    </div>
+                </td>
+                <td class="scheduleTableData venue">
+                    <div>長浜バイオ大学ドーム</div>
+                </td>
+                <td class="scheduleTableData time">
+                    <div>11:00</div>
+                </td>
+                <td class="scheduleTableData block">
+                    <div>A1</div>
+                </td>
+                <td class="scheduleTableData team">
+                    <div>ノービス</div>
+                </td>
+                <td class="scheduleTableData">
+                    <div>vs</div>
+                </td>
+                <td class="scheduleTableData team">
+                    <div>ウィングス</div>
+                </td>
+    
+            </tr>
+        
+    
+            <tr>
+                
+                <td class="scheduleTableData date">
+                    <div>
+                        2024-10-06
+                    </div>
+                </td>
+                <td class="scheduleTableData day">
+                    <div>
+                        日
+                    </div>
+                </td>
+                <td class="scheduleTableData venue">
+                    <div>長浜バイオ大学ドーム</div>
+                </td>
+                <td class="scheduleTableData time">
+                    <div>10:30</div>
+                </td>
+                <td class="scheduleTableData block">
+                    <div>A2</div>
+                </td>
+                <td class="scheduleTableData team">
+                    <div>ウィングス</div>
+                </td>
+                <td class="scheduleTableData">
+                    <div>vs</div>
+                </td>
+                <td class="scheduleTableData team">
+                    <div>クエーサーズ</div>
+                </td>
+    
+            </tr>
+        
+    
+            <tr>
+                
+                <td class="scheduleTableData date">
+                    <div>
+                        2024-10-06
+                    </div>
+                </td>
+                <td class="scheduleTableData day">
+                    <div>
+                        日
+                    </div>
+                </td>
+                <td class="scheduleTableData venue">
+                    <div>長浜バイオ大学ドーム</div>
+                </td>
+                <td class="scheduleTableData time">
+                    <div>13:30</div>
+                </td>
+                <td class="scheduleTableData block">
+                    <div>B2</div>
+                </td>
+                <td class="scheduleTableData team">
+                    <div>サウスベアーズ</div>
+                </td>
+                <td class="scheduleTableData">
+                    <div>vs</div>
+                </td>
+                <td class="scheduleTableData team">
+                    <div>アグレッサーズ</div>
+                </td>
+    
+            </tr>
+        
+    
+            <tr>
+                
+                <td class="scheduleTableData date">
+                    <div>
+                        2024-11-04
+                    </div>
+                </td>
+                <td class="scheduleTableData day">
+                    <div>
+                        月
+                    </div>
+                </td>
+                <td class="scheduleTableData venue">
+                    <div>長浜バイオ大学ドーム</div>
+                </td>
+                <td class="scheduleTableData time">
+                    <div>11:00</div>
+                </td>
+                <td class="scheduleTableData block">
+                    <div>B3</div>
+                </td>
+                <td class="scheduleTableData team">
+                    <div>ザルトリウス</div>
+                </td>
+                <td class="scheduleTableData">
+                    <div>vs</div>
+                </td>
+                <td class="scheduleTableData team">
+                    <div>サウスベアーズ</div>
+                </td>
+    
+            </tr>
+        
+    
+            <tr>
+                
+                <td class="scheduleTableData date">
+                    <div>
+                        2024-11-10
+                    </div>
+                </td>
+                <td class="scheduleTableData day">
+                    <div>
+                        日
+                    </div>
+                </td>
+                <td class="scheduleTableData venue">
+                    <div>近大医学部狭山グラウンド</div>
+                </td>
+                <td class="scheduleTableData time">
+                    <div>11:00</div>
+                </td>
+                <td class="scheduleTableData block">
+                    <div>A3</div>
+                </td>
+                <td class="scheduleTableData team">
+                    <div>クエーサーズ</div>
+                </td>
+                <td class="scheduleTableData">
+                    <div>vs</div>
+                </td>
+                <td class="scheduleTableData team">
+                    <div>サウスベアーズ</div>
+                </td>
+    
+            </tr>
+        
+    
+            <tr>
+                
+                <td class="scheduleTableData date">
+                    <div>
+                        2024-12-01
+                    </div>
+                </td>
+                <td class="scheduleTableData day">
+                    <div>
+                        日
+                    </div>
+                </td>
+                <td class="scheduleTableData venue">
+                    <div>長浜バイオ大学ドーム</div>
+                </td>
+                <td class="scheduleTableData time">
+                    <div>10:30</div>
+                </td>
+                <td class="scheduleTableData block">
+                    <div> </div>
+                </td>
+                <td class="scheduleTableData team">
+                    <div>Aブロック１位</div>
+                </td>
+                <td class="scheduleTableData">
+                    <div>vs</div>
+                </td>
+                <td class="scheduleTableData team">
+                    <div>Bブロック２位</div>
+                </td>
+    
+            </tr>
+        
+    
+            <tr>
+                
+                <td class="scheduleTableData date">
+                    <div>
+                        2024-12-01
+                    </div>
+                </td>
+                <td class="scheduleTableData day">
+                    <div>
+                        日
+                    </div>
+                </td>
+                <td class="scheduleTableData venue">
+                    <div>長浜バイオ大学ドーム</div>
+                </td>
+                <td class="scheduleTableData time">
+                    <div>16:00</div>
+                </td>
+                <td class="scheduleTableData block">
+                    <div>　</div>
+                </td>
+                <td class="scheduleTableData team">
+                    <div>Bブロック１位 </div>
+                </td>
+                <td class="scheduleTableData">
+                    <div>vs</div>
+                </td>
+                <td class="scheduleTableData team">
+                    <div>Aブロック２位</div>
+                </td>
+    
+            </tr>
+        
+    
+            <tr>
+                
+                <td class="scheduleTableData date">
+                    <div>
+                        2024-12-15
+                    </div>
+                </td>
+                <td class="scheduleTableData day">
+                    <div>
+                        日
+                    </div>
+                </td>
+                <td class="scheduleTableData venue">
+                    <div>布引グリーンスタジアム（プレイオフ準々決勝）</div>
+                </td>
+                <td class="scheduleTableData time">
+                    <div>10:30</div>
+                </td>
+                <td class="scheduleTableData block">
+                    <div>　</div>
+                </td>
+                <td class="scheduleTableData team">
+                    <div>12/1 １試合目の勝者</div>
+                </td>
+                <td class="scheduleTableData">
+                    <div>vs</div>
+                </td>
+                <td class="scheduleTableData team">
+                    <div>12/1 ２試合目の勝者</div>
+                </td>
+    
+            </tr>
+        
+    
+            <tr>
+                
+                <td class="scheduleTableData date">
+                    <div>
+                        2024-12-15
+                    </div>
+                </td>
+                <td class="scheduleTableData day">
+                    <div>
+                        日
+                    </div>
+                </td>
+                <td class="scheduleTableData venue">
+                    <div>布引グリーンスタジアム（プレイオフ準々決勝）</div>
+                </td>
+                <td class="scheduleTableData time">
+                    <div>13:30</div>
+                </td>
+                <td class="scheduleTableData block">
+                    <div>　</div>
+                </td>
+                <td class="scheduleTableData team">
+                    <div>Aブロック３位</div>
+                </td>
+                <td class="scheduleTableData">
+                    <div>vs</div>
+                </td>
+                <td class="scheduleTableData team">
+                    <div>Bブロック３位</div>
+                </td>
+    
+            </tr>
+        
+    
+            <tr>
+                
+                <td class="scheduleTableData date">
+                    <div>
+                        2025-01-26
+                    </div>
+                </td>
+                <td class="scheduleTableData day">
+                    <div>
+                        日
+                    </div>
+                </td>
+                <td class="scheduleTableData venue">
+                    <div>長良川球技メドウ（オーシャンボウル出場チーム決定戦）</div>
+                </td>
+                <td class="scheduleTableData time">
+                    <div>13:00</div>
+                </td>
+                <td class="scheduleTableData block">
+                    <div>　</div>
+                </td>
+                <td class="scheduleTableData team">
+                    <div>西日本代表</div>
+                </td>
+                <td class="scheduleTableData">
+                    <div>vs</div>
+                </td>
+                <td class="scheduleTableData team">
+                    <div>中日本代表</div>
+                </td>
+    
+            </tr>
+        
+    
+            <tr>
+                
+                <td class="scheduleTableData date">
+                    <div>
+                        2025-02-16
+                    </div>
+                </td>
+                <td class="scheduleTableData day">
+                    <div>
+                        日
+                    </div>
+                </td>
+                <td class="scheduleTableData venue">
+                    <div>MKタクシーエキスポ（オーシャンボウル）</div>
+                </td>
+                <td class="scheduleTableData time">
+                    <div>00:00</div>
+                </td>
+                <td class="scheduleTableData block">
+                    <div>←開始時間未定</div>
+                </td>
+                <td class="scheduleTableData team">
+                    <div>西中日本代表</div>
+                </td>
+                <td class="scheduleTableData">
+                    <div>vs</div>
+                </td>
+                <td class="scheduleTableData team">
+                    <div>東日本代表</div>
+                </td>
+    
+            </tr>
+        
+    
+            <tr>
+                
+                <td class="scheduleTableData date">
+                    <div>
+                        2025-02-23
+                    </div>
+                </td>
+                <td class="scheduleTableData day">
+                    <div>
+                        日
+                    </div>
+                </td>
+                <td class="scheduleTableData venue">
+                    <div>未定</div>
+                </td>
+                <td class="scheduleTableData time">
+                    <div>00:00</div>
+                </td>
+                <td class="scheduleTableData block">
+                    <div>←開始時間未定</div>
+                </td>
+                <td class="scheduleTableData team">
+                    <div>ボウルゲームを</div>
+                </td>
+                <td class="scheduleTableData">
+                    <div>vs</div>
+                </td>
+                <td class="scheduleTableData team">
+                    <div>やりたいな</div>
+                </td>
+    
+            </tr>
+        
+    </table>
+</div>
+
+<script src="static/scripts/game_schedule.js"></script>
+
+<link rel="stylesheet" href="static/styles/navbar.css">
+
+<nav class="sidebar">
+    <a class="sidebarItem"  href="index.html">
+        <h2 style="margin: 0;">ホーム</h2>
+    </a>
+    <a class="sidebarItem" href="yotei.html">
+        <h2 style="margin: 0;">試合日程</h2>
+    </a>
+    <a class="sidebarItem" href="teams.html">
+        <h2 style="margin: 0;">所属チーム</h2>
+    </a>
+    <a class="sidebarItem" href="contact.html">
+        <h2 style="margin: 0;">お問い合わせ</h2>
+    </a>
+</nav>
+
+<nav class="navbar">
+    <a href="index.html" class="navbarItem logo">
+        <img class="logoImage" src="banner/logo" >
+    </a>
+    <div class="navbarBtnContainer" style="display: flex;">
+        <a class="navbarItem nonlogo home"  href="index.html">
+            <h3 style="margin: 0;">ホーム</h3>
+        </a>
+        <a class="navbarItem nonlogo yotei" href="yotei.html">
+            <h3 style="margin: 0;">試合日程</h3>
+        </a>
+        <a class="navbarItem nonlogo teams" href="teams.html">
+            <h3 style="margin: 0;">所属チーム</h3>
+        </a>
+        <a class="navbarItem nonlogo contact" href="contact.html">
+            <h3 style="margin: 0;">お問い合わせ</h3>
+        </a>
+        <button class="openCloseSidebarBtn">
+            &#9776;
+        </button>
+    </div>
+
+</nav>
+<script src="static/scripts/navbar.js"></script>
+
+
+
+
+
+    <footer class="baseFooter">
+        <p>
+            関西草アメフトリーグ
+        </p>
+        <p>
+            日本プライベートフットボール協会
+        </p>
+        <p>
+            西日本支部
+        </p>
+    </footer>
+    <script src="static/scripts/textfields.js"></script>
+</body>
+</html>

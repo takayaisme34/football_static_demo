@@ -1,0 +1,16 @@
+.noto-sans-jp-font{
+    font-family: "Noto Sans JP", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 100;
+    font-style: normal;
+}
+
+body{
+    font-family: "Noto Sans JP";
+    padding-top: 1.7cm;
+    margin: 0;
+}
+
+.baseFooter{
+    text-align: center;
+}

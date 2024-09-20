@@ -1,0 +1,36 @@
+.mainImageContainer{
+    height: 300px;
+    width: 100%;
+    overflow: hidden;
+    display: flex;
+    justify-content: center; /* Centers the image horizontally */
+    align-items: center;  
+}
+.mainImage{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;       /* Ensures the image covers the container */
+    object-position: center;
+}
+.mainImageLabel{
+    position: absolute;
+    font-size: 23px;
+    margin: 40px;
+    text-align: center;
+    color: white;
+    text-shadow: 0 0 10px black, 0 0 20px black, 0 0 30px black, 0 0 40px black, 0 0 50px black, 0 0 60px black, 0 0 70px black;
+}
+.mainImageLabel > *{
+    white-space: nowrap;
+}
+
+.skewedText{
+    margin: 0; transform: skewX(-8deg);
+}
+
+@media (max-width: 600px) {
+    .mainImageLabel{
+        font-size: 15px;
+    }
+
+}

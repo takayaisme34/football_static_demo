@@ -1,0 +1,31 @@
+.navbarItem.logo, .navbarItem.nonlogo.home{
+    border-bottom: 2px solid black;
+}
+body{
+    padding: none;
+    margin: 0;
+}
+.homeSection{
+    padding-left: 20px;
+    padding-right: 20px;
+}
+.homeSectionTitle{
+    text-align: center;
+}
+.homeText{
+    padding: 40px;
+    padding-top: 0;
+}
+.homeTableData{
+    border: 1px solid black;
+}
+.homeTable{
+    border-collapse: collapse;
+    width: 100%;
+}
+.homeTableContainer{
+    padding: 20px;
+    padding-top: 0px;
+}
+
+

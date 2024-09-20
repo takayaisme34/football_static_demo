@@ -1,0 +1,8 @@
+
+.textfieldEditor{
+    width: 100%;
+    resize: none;
+}
+.textfieldText{
+    white-space: pre-line;
+}

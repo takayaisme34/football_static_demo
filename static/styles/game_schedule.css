@@ -1,0 +1,165 @@
+
+.strikethrough {
+    position: relative;
+
+}
+.strikethrough:before {
+    width: 145%;
+    position: absolute;
+    content: "";
+    left: -20%;
+    top: 52%;
+    right: 0;
+    border-top: 1.5px solid;
+    border-color: inherit;
+    -webkit-transform:rotate(45deg);
+    -moz-transform:rotate(45deg);
+    -ms-transform:rotate(45deg);
+    -o-transform:rotate(45deg);
+    transform:rotate(45deg);
+}
+
+
+.matchBoxCell{
+    border: 1px solid black;
+    aspect-ratio: 1/1;
+    width: 10vw;
+    overflow: hidden;
+}
+.matchBox{
+    display: flex;
+}
+.matchBoxCell.label{
+    text-align: center;
+    overflow: hidden;
+}
+.matchBoxCell.image{
+    display: grid;
+    place-items: center;
+    position: relative;
+}
+.matchBoxCell.label > *{
+    margin: 0;
+    font-size: 5vw;
+    transform: translateY(-10px);
+}
+.matchBoxCell img{
+    width: 100%;
+}
+.matchBoxContainer{
+    display: flex;
+    justify-content: space-evenly;
+    padding-top: 20px;
+    padding-bottom: 20px;
+}
+.changeMatchBoxImageForm{
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+
+tr > *{
+    width: 2vw;
+    height: 2vw;
+}
+.scheduleTable{
+    border: 1px solid black;
+    width: 90%;
+    font-size: 1.5vw;
+    border-collapse: collapse;
+}
+.scheduleTableContainer{
+    display: grid;
+    place-items: center;
+}
+.scheduleTableHeader{
+    border: 1px solid black;
+}
+.scheduleTable th{
+    white-space: nowrap;
+}
+
+.scheduleTableData{
+    text-align: center;
+    overflow: auto;
+    border: 1px solid black;
+}
+.scheduleTableData.date > *{
+    white-space: nowrap;
+}
+.scheduleTableData.time{
+    width: 10px;
+    padding: -10px;
+}
+.scheduleTableData.venue{
+    width: 10vw;
+}
+.scheduleTableData.team{
+    width: 15vw;
+}
+.addScheduleOverlay, .addScheduleModalContainer{
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+}
+.addScheduleOverlay{
+    background-color: black;
+    opacity: .5;
+}
+.addScheduleModalContainer{
+    display: grid;
+    place-items: center;
+    display: none;
+}
+.addScheduleModal{
+    background-color: white;
+    padding: 40px;
+    z-index: 1;
+    position: relative;;
+}
+.addScheduleModalTable th {
+    white-space: nowrap;
+    text-align: left;
+}
+.addScheduleModal input{
+    width: 100%;
+}
+.addScheduleModalHideBtn, .deleteScheduleRowForm button{
+    background-color: lightcoral;
+    border: none;
+    margin: 0;
+}
+.addScheduleModalHideBtn{
+    position: absolute;
+    top: 10px;
+    right: 10px;
+}
+
+
+@media (min-width: 1000px) {
+    .matchBoxContainer{
+        padding: 40px;
+    }
+    .matchBoxCell{
+        width: 8vw;
+    }
+    .matchBoxCell.label > *{
+        font-size: 3vw;
+        transform: translateY(-1px);
+
+    }
+    
+
+
+}
+
+@media (max-width: 600px) {
+
+    .matchBoxCell.label div{
+        transform: translateY(-1px);
+        
+    }
+}
+    

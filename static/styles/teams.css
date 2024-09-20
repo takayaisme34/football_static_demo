@@ -1,0 +1,148 @@
+.addTeamModalContainer, .overlay{
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    display: grid;
+    place-items: center;
+}
+.overlay{
+    background-color: black;
+    opacity: .5;
+}
+.addTeamModal{
+    padding: 30px;
+    background-color: white;
+    border-radius: 20px;
+    position: relative;
+    z-index: 3;
+
+}
+.closeAddTeamModalBtn{
+    position: absolute;
+    top: 0;
+    right: 0;
+    margin: 10px;
+    background-color: lightcoral;
+    border: none;
+}
+.addTeamModalText, .addTeamModalSubmitBtn, .addTeamModalTextarea{
+    width: 100%;
+}
+th{
+    text-align: left;
+}
+.addTeamModalTextarea{
+    resize: none;
+}
+.addTeamModalSubmitBtn{
+    margin-top: 10px;
+
+}
+.teamImageContainer{
+    aspect-ratio: 1/1;
+    overflow: hidden;
+    border-radius: 20px;
+    width: 140px;
+    display: grid;
+    place-items: center;
+    position: relative;
+    padding: 20px;
+
+}
+.teamName{
+    font-size: 40px;
+}
+.teamDiv{
+    transform: translateX(calc(100%));
+    display: flex;
+    padding: 20px;
+    animation-name: slide-in;
+    animation-duration: .5s;
+    animation-delay: 1s;
+    animation-fill-mode: forwards;
+}
+.teamImage{
+    width: 90%;
+    scale: .9;
+    position: absolute;
+}
+.skewedText{
+    margin: 0; transform: skewX(-8deg);
+}
+.teamInfo{
+    display: flex;
+    padding-left: 20px;
+    padding-right: 20px;
+    flex-direction: column;
+    width: 100%;
+}
+.socialMediaMenuContainer{
+    display: flex;
+    flex-direction: row-reverse;
+    place-items: right;
+}
+.socialMediaMenu{
+    display: flex;
+    position: absolute;
+    bottom: 10px;
+    right: 10px;
+    justify-content: space-evenly;
+}
+.teamsContainer{
+    overflow: hidden;
+}
+
+.snsIconImage{
+    width: 30px;
+    margin-right: 10px;
+}
+.snsIconImage.twitter{
+    background-color: black;
+}
+.snsIconImage.youtube{
+    aspect-ratio: 1/1;
+}
+
+.teamDivNavigationBar{
+    display: flex;
+    position: absolute;
+    top: 10px;
+    left: 0;
+    z-index: 1;
+}
+
+.deleteRowBtn{
+    background-color: lightcoral;
+    border: none;
+}
+.teamDescription{
+    margin: 0;
+    padding: 0;
+    white-space: pre-line;
+}
+
+@keyframes slide-in{
+    from {
+        
+        transform: translateX(calc(100%));
+    }
+    to{
+        opacity: 1;
+        display: flex;
+        transform: translateX(0px);
+    }
+
+}
+
+@media (max-width: 600px) {
+
+    .teamDiv{
+        flex-direction: column;
+    }
+    .teamImageContainerContainer{
+        display: grid;
+        place-items: center;
+    }
+}

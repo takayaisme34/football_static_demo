@@ -1,0 +1,9 @@
+
+.contactTextarea{
+    width: 100%;
+    resize: none;
+}
+.contactInfo{
+    text-align: center;
+    white-space: pre-line;
+}

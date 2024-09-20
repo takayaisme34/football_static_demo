@@ -1,0 +1,27 @@
+
+
+.footballClubTimeline{
+    border-left: 2px solid black;
+    padding-left: 20px;
+    margin-left: 40px;
+}
+li {font-size: 30px;}
+li span {font-size: 20px;}
+
+ul{
+    list-style: square;
+}
+li:hover{
+    color: red;
+}
+.footballClubTimelineEvent{
+    padding-left: 20px;
+    margin: 0;
+    
+}
+.footballClubTimelineEventDate, .footballClubTimelineEventDescription{
+    margin: 0;
+    padding: 10px;
+    font-size: 15px;
+
+}
