@@ -6,8 +6,8 @@ body{
     margin: 0;
 }
 .homeSection{
-    padding-left: 20px;
-    padding-right: 20px;
+    padding-left: 40px;
+    padding-right: 40px;
 }
 .homeSectionTitle{
     text-align: center;
@@ -27,5 +27,74 @@ body{
     padding: 20px;
     padding-top: 0px;
 }
+.mainImageLabel.home{
+    font-size: 20px;
+}
 
 
+.float-left {
+    float: left;
+    margin-right: 45px; /* Horizontal space between image and text */
+    margin-bottom: 0px; /* Vertical space between image and text */
+}
+
+/* CSS for right-aligned image */
+.float-right {
+    float: right;
+    margin-left: 20px;  /* Horizontal space between image and text */
+    margin-bottom: 25px; /* Vertical space between image and text */
+}
+
+/* Clears floated elements to stop text wrapping */
+.clear {
+    clear: both;
+}
+.leaderImage{
+    height: 25vw;
+    display: absolute;
+    right: 0;
+}
+.leaderImageContainer{
+    width: 25vw;
+    height: 25vw;
+    transform: translate(40px, 0px);
+    overflow: hidden;
+    position: relative;
+    display: grid;
+    place-items: center;
+    justify-content: center; /* Centers the image horizontally */
+    align-items: center;
+    border-radius: 20px;
+}
+
+@media (max-width: 600px) {
+    .leaderGreetingContainer{
+        width: 90vw;
+        flex-direction: column;
+    }
+    .homeSection{
+        padding-left: 20px;
+        padding-right: 20px;
+    }
+}
+
+
+@media (max-width: 650px) {
+    .mainImageLabel{
+        font-size: 7px;
+        white-space: "";
+    }
+    .skewedText {
+        font-size: 18px;
+    }
+}
+
+@media (max-width: 400px) {
+    .mainImageLabel{
+        font-size: 15px;
+    }
+    .skewedText {
+        font-size: 15px;
+    }
+
+}

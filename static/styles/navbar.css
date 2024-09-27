@@ -9,9 +9,11 @@
     background-color: white;
     justify-content: space-between;
 }
+/*
 .navbarBtnContainer{
 
 }
+*/
 .navbarItem{
     padding-bottom:-2px;
     display: grid;

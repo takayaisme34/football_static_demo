@@ -18,8 +18,6 @@
     -o-transform:rotate(45deg);
     transform:rotate(45deg);
 }
-
-
 .matchBoxCell{
     border: 1px solid black;
     aspect-ratio: 1/1;
@@ -57,7 +55,6 @@
     top: 0;
     left: 0;
 }
-
 tr > *{
     width: 2vw;
     height: 2vw;
@@ -78,7 +75,6 @@ tr > *{
 .scheduleTable th{
     white-space: nowrap;
 }
-
 .scheduleTableData{
     text-align: center;
     overflow: auto;
@@ -137,7 +133,6 @@ tr > *{
     right: 10px;
 }
 
-
 @media (min-width: 1000px) {
     .matchBoxContainer{
         padding: 40px;
@@ -148,11 +143,7 @@ tr > *{
     .matchBoxCell.label > *{
         font-size: 3vw;
         transform: translateY(-1px);
-
     }
-    
-
-
 }
 
 @media (max-width: 600px) {
